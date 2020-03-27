@@ -1,13 +1,13 @@
+import controller.Controller;
+
+import java.io.IOException;
+
 public class App {
-    public static void main(String[] args) {
-        Triangle tg = new Triangle();
-        System.out.println(tg.toString());
-
-        Triangle tg1 = new Triangle("red",true,1,2,3);
-        System.out.println(tg1.toString());
-
-        Triangle tg2 = new Triangle(2,2,2);
-        System.out.println(tg2.toString());
+    public static void main(String[] args) throws IOException {
+       Controller cl = new Controller();
+       Object obj = new Object();
+       obj = cl.input();
+        System.out.println(obj.toString());
 
     }
 }
